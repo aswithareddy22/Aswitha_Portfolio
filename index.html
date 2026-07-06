@@ -2,57 +2,82 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aswitha Reddy | Portfolio</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Aswitha | Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 </head>
 
 <body>
 
-<header>
-<nav>
-<h2 class="logo">Aswitha<span>.</span></h2>
+<div id="particles"></div>
 
-<ul id="menu">
+<header>
+
+<nav>
+
+<h2>Portfolio</h2>
+
+<ul>
+
 <li><a href="#home">Home</a></li>
+
 <li><a href="#about">About</a></li>
+
 <li><a href="#skills">Skills</a></li>
+
 <li><a href="#projects">Projects</a></li>
+
 <li><a href="#contact">Contact</a></li>
+
 </ul>
 
-<div class="menu-btn">
-<i class="fas fa-bars"></i>
-</div>
+<button id="theme">
+<i class="fa-solid fa-moon"></i>
+</button>
+
 </nav>
+
 </header>
 
-<section id="home" class="hero">
+<section class="hero" id="home">
 
-<div class="hero-text">
-<h3>Hello, I'm</h3>
+<div class="left">
 
-<h1>Aswitha Reddy</h1>
+<h3>Hello I'm</h3>
 
-<h2><span class="typing"></span></h2>
+<h1>Aswitha</h1>
+
+<h2><span id="typing"></span></h2>
 
 <p>
-Computer Science Engineering Student passionate about
-Web Development, Java, Python and Artificial Intelligence.
+
+Computer Science Student passionate about AI,
+Web Development and Software Engineering.
+
 </p>
 
-<a href="#contact" class="btn">Hire Me</a>
+<div class="buttons">
 
-<a href="#" class="btn2">Download Resume</a>
+<a href="#" class="btn">Download CV</a>
+
+<a href="#contact" class="btn2">Hire Me</a>
 
 </div>
 
-<div class="hero-img">
-<img src="profile.png" alt="profile">
+</div>
+
+<div class="right">
+
+<img src="images/profile.png">
+
 </div>
 
 </section>
@@ -62,9 +87,10 @@ Web Development, Java, Python and Artificial Intelligence.
 <h2>About Me</h2>
 
 <p>
-I am a Computer Science Engineering student with strong
-problem-solving skills and a passion for software development.
-I enjoy creating responsive websites and innovative projects.
+
+I'm a CSE student who enjoys building responsive websites,
+AI projects and software applications.
+
 </p>
 
 </section>
@@ -73,37 +99,35 @@ I enjoy creating responsive websites and innovative projects.
 
 <h2>Skills</h2>
 
-<div class="skills">
+<div class="skill">
 
-<div class="card">
-<i class="fab fa-html5"></i>
-<h3>HTML</h3>
+<p>HTML</p>
+
+<div class="bar"><span style="width:95%"></span></div>
+
 </div>
 
-<div class="card">
-<i class="fab fa-css3-alt"></i>
-<h3>CSS</h3>
+<div class="skill">
+
+<p>CSS</p>
+
+<div class="bar"><span style="width:90%"></span></div>
+
 </div>
 
-<div class="card">
-<i class="fab fa-js"></i>
-<h3>JavaScript</h3>
+<div class="skill">
+
+<p>JavaScript</p>
+
+<div class="bar"><span style="width:85%"></span></div>
+
 </div>
 
-<div class="card">
-<i class="fab fa-java"></i>
-<h3>Java</h3>
-</div>
+<div class="skill">
 
-<div class="card">
-<i class="fab fa-python"></i>
-<h3>Python</h3>
-</div>
+<p>Python</p>
 
-<div class="card">
-<i class="fas fa-database"></i>
-<h3>SQL</h3>
-</div>
+<div class="bar"><span style="width:88%"></span></div>
 
 </div>
 
@@ -113,14 +137,37 @@ I enjoy creating responsive websites and innovative projects.
 
 <h2>Projects</h2>
 
-<div class="project">
+<div class="cards">
 
-<h3>Face Recognition Attendance System</h3>
+<div class="card">
 
-<p>
-Developed an AI-based attendance system using Face Recognition
-to automate student attendance.
-</p>
+<i class="fa-solid fa-code"></i>
+
+<h3>Portfolio Website</h3>
+
+<p>Responsive portfolio with animations.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-camera"></i>
+
+<h3>Face Recognition Attendance</h3>
+
+<p>AI attendance management system.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h3>Weather App</h3>
+
+<p>Weather application using API.</p>
+
+</div>
 
 </div>
 
@@ -128,17 +175,17 @@ to automate student attendance.
 
 <section id="contact">
 
-<h2>Contact Me</h2>
+<h2>Contact</h2>
 
 <form>
 
-<input type="text" placeholder="Name">
+<input type="text" placeholder="Your Name">
 
 <input type="email" placeholder="Email">
 
 <textarea placeholder="Message"></textarea>
 
-<button>Send</button>
+<button>Send Message</button>
 
 </form>
 
@@ -146,7 +193,7 @@ to automate student attendance.
 
 <footer>
 
-<p>© 2026 Aswitha Reddy | All Rights Reserved</p>
+<p>© 2026 Aswitha | All Rights Reserved</p>
 
 </footer>
 
