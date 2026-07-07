@@ -37,6 +37,15 @@ I'm a passionate Computer Science Engineering student with an interest in **Soft
 * Visual Studio Code
 
 ## 📂 Featured Projects
+### 🎮 Tic Tac Toe Web Application
+
+**Tech Stack:** HTML5, CSS3, JavaScript
+
+* 🚀 Developed a responsive and interactive Tic Tac Toe game with a modern user interface.
+* 🧠 Implemented efficient game logic for turn management, winner detection, draw validation, and game reset.
+* ⚡ Utilized JavaScript for dynamic DOM manipulation and real-time user interactions.
+* 📱 Optimized the application for a seamless experience across desktop and mobile devices.
+
 
 
 ### 🌐 Personal Portfolio Website
