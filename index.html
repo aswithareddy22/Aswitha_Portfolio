@@ -7,73 +7,90 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+</head>
 <body>
 
 <header>
 
+<div class="logo">Portfolio</div>
+
 <nav>
 
-<h2 class="logo">Aswitha.</h2>
+<a href="#home">Home</a>
 
-<ul>
+<a href="#about">About</a>
 
-<li><a href="#home">Home</a></li>
+<a href="#skills">Skills</a>
 
-<li><a href="#about">About</a></li>
+<a href="#projects">Projects</a>
 
-<li><a href="#skills">Skills</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
+<a href="#contact">Contact</a>
 
 </nav>
 
+<div class="menu"><i class="fas fa-bars"></i></div>
+
 </header>
 
-<section id="home" class="hero">
+<section class="hero" id="home">
 
 <div class="content">
 
-<h1>Hello, I'm <span>Aswitha Reddy</span></h1>
+<h3>Hello, I'm</h3>
+
+<h1>Aswitha Reddy</h1>
 
 <h2><span id="typing"></span></h2>
 
-<p>Passionate CSE Student | Web Developer | Future Software Engineer</p>
+<p>
+Passionate Computer Science Student specializing in
+Web Development, Python, Java and AI.
+</p>
+
+<div class="buttons">
 
 <a href="#contact" class="btn">Hire Me</a>
+
+
+</div>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+</div>
 
 </div>
 
 <div class="image">
 
-<img src="profile.jpg">
+<img src="https://i.imgur.com/eYQ9N7R.png">
 
 </div>
 
 </section>
 
-<section id="about">
+<section class="about" id="about">
 
 <h2>About Me</h2>
 
 <p>
-
-I am a Computer Science Engineering student passionate about Web Development, Artificial Intelligence, and Software Engineering. I enjoy building responsive websites and solving programming problems.
-
+I'm an enthusiastic Computer Science Engineering student passionate about building modern web applications and solving real-world problems. Skilled in Python, Java, HTML, CSS, JavaScript, SQL, and AI technologies.
 </p>
 
 </section>
 
-<section id="skills">
+<section class="skills" id="skills">
 
 <h2>Skills</h2>
 
@@ -97,21 +114,29 @@ I am a Computer Science Engineering student passionate about Web Development, Ar
 
 <p>JavaScript</p>
 
-<div class="bar"><span style="width:80%"></span></div>
+<div class="bar"><span style="width:85%"></span></div>
 
 </div>
 
 <div class="skill">
 
-<p>C Programming</p>
+<p>Python</p>
 
 <div class="bar"><span style="width:90%"></span></div>
 
 </div>
 
+<div class="skill">
+
+<p>Java</p>
+
+<div class="bar"><span style="width:80%"></span></div>
+
+</div>
+
 </section>
 
-<section id="projects">
+<section class="projects" id="projects">
 
 <h2>Projects</h2>
 
@@ -119,39 +144,28 @@ I am a Computer Science Engineering student passionate about Web Development, Ar
 
 <div class="card">
 
-<i class="fa-solid fa-user-check"></i>
+<h3>Tic Tac Toe Game</h3>
 
-<h3>Face Recognition Attendance</h3>
-
-<p>Attendance system using Python, OpenCV and Face Recognition.</p>
+<p>
+Interactive game using HTML CSS JavaScript with responsive UI.
+</p>
 
 </div>
 
 <div class="card">
-
-<i class="fa-solid fa-laptop-code"></i>
 
 <h3>Portfolio Website</h3>
 
-<p>Responsive personal portfolio built using HTML CSS JavaScript.</p>
+<p>
+Responsive personal portfolio with animations and dark theme.
+</p>
 
 </div>
 
 <div class="card">
 
-<i class="fa-solid fa-code"></i>
 
-<h3>Student Management</h3>
-
-<p>CRUD application for student data.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact">
+<section class="contact" id="contact">
 
 <h2>Contact Me</h2>
 
@@ -159,21 +173,21 @@ I am a Computer Science Engineering student passionate about Web Development, Ar
 
 <input type="text" placeholder="Your Name">
 
-<input type="email" placeholder="Your Email">
+<input type="email" placeholder="Email">
 
 <textarea placeholder="Message"></textarea>
 
-<button>Send</button>
+<button>Send Message</button>
 
 </form>
 
 </section>
 
-<button id="topBtn">
+<footer>
 
-<i class="fa-solid fa-arrow-up"></i>
+<p>© 2026 Aswitha Reddy | All Rights Reserved</p>
 
-</button>
+</footer>
 
 <script src="script.js"></script>
 
