@@ -38,11 +38,6 @@ I'm a passionate Computer Science Engineering student with an interest in **Soft
 
 ## 📂 Featured Projects
 
-### 🎯 Face Recognition Attendance System
-
-A smart attendance management system that uses facial recognition technology to automatically identify students and record attendance.
-
-**Technologies:** Python, OpenCV, Face Recognition
 
 ### 🌐 Personal Portfolio Website
 
