@@ -1,56 +1,56 @@
-const text=[
+const words=[
 "Full Stack Developer",
-"AI Enthusiast",
+"Python Developer",
 "Web Designer",
-"Programmer"
+"Java Programmer",
+"AI Enthusiast"
 ];
 
 let i=0;
 let j=0;
-let deleting=false;
+let current="";
+let isDeleting=false;
 
-function typing(){
+function type(){
 
-let word=text[i];
+current=words[i];
 
-if(!deleting){
+if(isDeleting){
 
-document.getElementById("typing").innerHTML=word.substring(0,j++);
+document.getElementById("typing").textContent=current.substring(0,j--);
 
-if(j>word.length){
+}else{
 
-deleting=true;
+document.getElementById("typing").textContent=current.substring(0,j++);
 
-setTimeout(typing,1000);
+}
+
+if(!isDeleting && j===current.length+1){
+
+isDeleting=true;
+
+setTimeout(type,1000);
 
 return;
 
 }
 
-}else{
+if(isDeleting && j===0){
 
-document.getElementById("typing").innerHTML=word.substring(0,j--);
-
-if(j==0){
-
-deleting=false;
+isDeleting=false;
 
 i++;
 
-if(i==text.length)i=0;
+if(i===words.length){
+
+i=0;
 
 }
 
 }
 
-setTimeout(typing,deleting?70:120);
+setTimeout(type,isDeleting?60:120);
 
 }
 
-typing();
-
-document.getElementById("theme").onclick=function(){
-
-document.body.classList.toggle("light");
-
-}
+type();
